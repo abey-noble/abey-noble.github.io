@@ -1,0 +1,212 @@
+
+/* ------- DEFAULT: MOBILE ------- */
+
+/* *{
+    font-family: 'Lateef', cursive;
+} */
+
+body{
+    /* background-color: #F8C9A0; */
+}
+
+
+
+/* SKIP */
+.skip{
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    left: -1000px;
+}
+
+.skip:focus{
+    left: 0;
+}
+
+/* HEADER DIV */
+nav .title_page{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:  50px auto 50px;
+}
+
+/* ABEY NOBLE */
+.name{
+    font-size: 70px;
+    grid-column: 2 / span 6;
+    grid-row: 2 / span 1;
+    justify-self: start;
+    align-self: center;
+    font-weight: normal;
+    border: solid 3px #EDA192;
+    box-shadow: 10px 10px #EDA192;
+}
+
+
+a.navitem:link{
+   
+    text-decoration: none;
+    color: black;
+    justify-self: center;
+}
+a.navitem:visited{
+    text-decoration: line-through;
+    color: black;
+}
+a.navitem:hover, a.navitem:active{
+    text-decoration: line-through;  
+    /* background-color: #EDA192; */
+    font-style: italic;
+}
+a.currentpage:link, a.currentpage:visited{
+    text-decoration: line-through;   
+}
+nav div a{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* HORIZONTAL LINE */
+hr, div hr{
+    display:block;
+    margin: auto;
+    margin: auto;
+    width: 80%;
+    color: #EDA192;
+}
+
+/* FOOTER */
+footer div p{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main p{
+    line-height: 1.2;
+}
+
+.material-icons-outlined-menu{
+    font-family: Material Icons;
+    font-size: 50px;
+    color: grey;
+    position: fixed;
+    display: block;
+    bottom: 25px;
+    right: 25px;
+}
+
+.material-icons-outlined-x{
+    font-family: Material Icons;
+    font-size: 50px;
+    color: grey;
+    
+    /* margin-right: 25px; */
+    justify-self: center;
+}
+
+/* 
+footer{
+    position: relative;
+    bottom: 5px;
+} */
+
+
+
+@media screen and (max-width: 500px){
+    /* NAVIGATION */
+    div.navbar{
+        background-color: lightgrey;
+        list-style-type: none;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        display: none;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 1fr;
+        font-size: 20px;
+    }
+    .navitem{
+        padding: 10px;
+    }
+    span.navitem5{
+        grid-row: 1 / span 1;
+    }
+    a.navitem1{
+        grid-row: 2 / span 1;
+    }
+    a.navitem2{
+        grid-row: 3 / span 1;
+    }
+    a.navitem3{
+        grid-row: 4 / span 1;
+    }
+    a.navitem4{
+        grid-row: 5 / span 1;
+    }
+    /* .menu_web{
+        display: none;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+    } */
+    .remove_line{
+        display:none;
+    }
+}
+
+
+
+
+
+/* ------- TABLET ------- */
+
+@media screen and (min-width: 500px) {
+    .navbar{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+    span.navitem5{
+        display: none;
+    }
+    a.navitem1{
+        
+        grid-column: 1 / span 1;
+    }
+    a.navitem2{
+        
+        grid-column: 2 / span 1;
+    }
+    a.navitem3{
+        
+        grid-column: 3 / span 1;
+    }
+    a.navitem4{
+        
+        grid-column: 4 / span 1;
+    }
+    .material-icons-outlined-menu{
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px){
+    p{
+        font-size: 1.5em;
+    }
+    
+}
+
+
+
+
+
+
+
+
